@@ -1,0 +1,23 @@
+POST https://www.dragonsofmugloar.com/api/v2/game/start
+
+###
+
+POST https://www.dragonsofmugloar.com/api/v2/{{gameId}}/investigate/reputation
+
+###
+
+GET https://www.dragonsofmugloar.com/api/v2/{{gameId}}/messages
+
+###
+
+POST https://www.dragonsofmugloar.com/api/v2/{{gameId}}/solve/DZ05yTvw
+
+###
+
+GET https://www.dragonsofmugloar.com/api/v2/{{gameId}}/shop
+
+###
+
+POST https://www.dragonsofmugloar.com/api/v2/{{gameId}}/shop/buy/hpot
+
+###

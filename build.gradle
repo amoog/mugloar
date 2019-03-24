@@ -1,0 +1,39 @@
+plugins {
+    id 'application'
+}
+
+group 'ee.moog.mugloar'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.11
+targetCompatibility = 1.11
+
+mainClassName = "ee.moog.mugloar.Main"
+
+repositories {
+    mavenCentral()
+}
+
+ext {
+    retrofitVersion = '2.5.0'
+    jacksonVersion = '2.9.8'
+    slf4jVersion = '1.7.26'
+    logbackVersion = '1.2.3'
+}
+
+dependencies {
+    implementation "com.squareup.retrofit2:retrofit:$retrofitVersion"
+    implementation "com.squareup.retrofit2:converter-jackson:$retrofitVersion"
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.14.0'
+
+    implementation "com.fasterxml.jackson.core:jackson-core:$jacksonVersion"
+    implementation "com.fasterxml.jackson.core:jackson-databind:$jacksonVersion"
+    implementation "com.fasterxml.jackson.core:jackson-annotations:$jacksonVersion"
+
+    implementation "org.slf4j:slf4j-api:$slf4jVersion"
+    implementation "ch.qos.logback:logback-core:$logbackVersion"
+    implementation "ch.qos.logback:logback-classic:$logbackVersion"
+    implementation "org.slf4j:jul-to-slf4j:$slf4jVersion"
+}
+
+
